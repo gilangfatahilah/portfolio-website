@@ -4,7 +4,6 @@ import { NavItems, Socials } from "@/constants";
 import Image from "next/image";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { slideInFromRight } from "@/utils/motion";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
