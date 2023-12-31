@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Background from "@/components/Background";
+import Navbar from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Gilang Fatahilah",
-  description:
-    "Gilang Fatahilah Akbar is final year students in the University of Bani Saleh with experience in Website Development.",
+  description: "Portfolio website of Gilang Fatahilah Akbar",
 };
 
 export default function RootLayout({
@@ -20,6 +21,8 @@ export default function RootLayout({
       <body
         className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden`}
       >
+        <Background />
+        <Navbar />
         {children}
       </body>
     </html>
