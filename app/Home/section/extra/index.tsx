@@ -1,4 +1,4 @@
-import HeroExtraContent from "@/components/HeroExtraContent";
+import HeroExtraContent from "./HomeExtraContent";
 import React from "react";
 
 const HomeExtra = () => {

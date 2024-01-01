@@ -1,33 +1,13 @@
-"use client";
+import type { Metadata } from "next";
+import Home from "@/app/Home/page";
+import { FC } from "react";
+export const metadata: Metadata = {
+  title: "Gilang Fatahilah",
+  description: "Portfolio website of Gilang Fatahilah Akbar",
+};
 
-import React, { Suspense, useState } from "react";
-import Homes from "@/pages/home";
-import HomeExtra from "@/pages/home/HomeExtra";
-import LoadingScreen from "@/components/Loading";
-import Navbar from "@/components/Navbar";
+const HomePage: FC = () => {
+  return <Home />;
+};
 
-export default function Home() {
-  const [isLoading, setIsLoading] = useState(true);
-
-  const handleLoadingComplete = () => {
-    setIsLoading(false);
-  };
-
-  return (
-    <main className="h-full w-full">
-      <Suspense
-        fallback={<LoadingScreen onLoadingComplete={handleLoadingComplete} />}
-      >
-        {isLoading ? (
-          <LoadingScreen onLoadingComplete={handleLoadingComplete} />
-        ) : (
-          <div className="flex flex-col gap-20">
-            <Navbar />
-            <Homes />
-            <HomeExtra />
-          </div>
-        )}
-      </Suspense>
-    </main>
-  );
-}
+export default HomePage;

@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { FC } from "react";
 import { motion } from "framer-motion";
 import { SparklesIcon } from "@heroicons/react/16/solid";
 import {
@@ -10,7 +10,7 @@ import {
 } from "@/utils/motion";
 import Image from "next/image";
 
-const HeroContent = () => {
+const HeroContent: FC = () => {
   return (
     <motion.div
       initial="hidden"

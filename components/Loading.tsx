@@ -27,6 +27,7 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({ onLoadingComplete }) => {
       setProgress((prevProgress) => {
         if (prevProgress >= 100) {
           onLoadingComplete();
+          sessionStorage.setItem("loading", "false");
           return 100;
         }
         return prevProgress + 1;

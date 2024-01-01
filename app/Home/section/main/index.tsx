@@ -1,7 +1,7 @@
-import React from "react";
-import HeroContent from "@/components/HeroContent";
+import React, { FC } from "react";
+import HeroContent from "./HomeContent";
 
-const Homes = () => {
+const Homes: FC = () => {
   return (
     <div className="relative flex flex-col h-full w-full">
       <video

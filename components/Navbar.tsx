@@ -2,6 +2,7 @@
 
 import { NavItems, Socials } from "@/constants";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
@@ -29,13 +30,13 @@ const Navbar = () => {
         <div className="w-[500px] h-full hidden lg:flex flex-row items-center justify-between ml-20">
           <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] px-[20px] py-[10px] rounded-full text-gray-200">
             {NavItems.map((item) => (
-              <a
+              <Link
                 href={item.href}
                 key={item.name}
                 className="cursor-pointer hover:text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-purple-500 transition-colors"
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
         </div>
