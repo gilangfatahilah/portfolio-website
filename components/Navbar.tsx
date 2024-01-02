@@ -15,13 +15,13 @@ const Navbar: FC = () => {
 
   return (
     <nav className="w-full h-auto fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-4">
-      <div className="w-full h-full flex items-center justify-between m-auto py-4 px-[10px]">
+      <div className="w-full h-full flex items-center justify-between m-auto py-3 lg:py-4 px-[10px]">
         <a href="/" className="h-auto w-auto flex flex-row items-center">
           <Image
             src="/icons/logo.svg"
             alt="logo"
-            width={40}
-            height={40}
+            width={isMobileMenuOpen ? 40 : 30}
+            height={isMobileMenuOpen ? 40 : 30}
             className="cursor-pointer hover:animate-slowspin"
           />
         </a>
@@ -66,8 +66,8 @@ const Navbar: FC = () => {
             <Image
               src={"icons/hamburger.svg"}
               alt={"hamburger menu"}
-              width={30}
-              height={30}
+              width={isMobileMenuOpen ? 30 : 25}
+              height={isMobileMenuOpen ? 30 : 25}
             />
           </button>
         </div>
@@ -75,15 +75,18 @@ const Navbar: FC = () => {
 
       {/* Mobile Navigation */}
       {isMobileMenuOpen && (
-        <motion.div
-          className="fixed top-0 h-screen w-full lg:hidden"
-          initial={{ translateX: `${isMobileMenuOpen ? "100%" : "0%"}` }}
-          animate={{ translateX: `${isMobileMenuOpen ? 0 : 100}` }}
-          exit={{ translateX: `${isMobileMenuOpen ? "0%" : "100%"}` }}
-          transition={{ duration: 0.3, ease: "easeInOut" }}
+        <div
+          className={`fixed top-0 h-screen w-full lg:hidden ${
+            !isMobileMenuOpen
+              ? "translate-x-full transition-all duration-300 ease-in"
+              : "translate-x-0 transition-all duration-300 ease-out"
+          }`}
         >
           <div className="fixed top-0 z-0 h-full w-full backdrop-blur-sm"></div>
-          <motion.div className="fixed right-0 top-0 z-[30] h-full w-3/4 bg-[#15053a] drop-shadow-lg md:w-1/2 ">
+          <div
+            className="fixed right-0 top-0 z-[30] h-full w-3/4 bg-[#15053a] drop-shadow-lg md:w-1/2 "
+            data-aos="fade-left"
+          >
             <div className="w-full flex flex-1 justify-end">
               <button
                 aria-label="Close Navigation menu"
@@ -133,8 +136,8 @@ const Navbar: FC = () => {
                 </a>
               ))}
             </div>
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
       )}
     </nav>
   );

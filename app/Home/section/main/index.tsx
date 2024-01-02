@@ -8,7 +8,7 @@ const Homes: FC = () => {
         autoPlay
         muted
         loop
-        className="rotate-180 absolute top-[-41%] left-0 z-[1] w-full h-full object cover"
+        className="rotate-180 absolute top-[-38%] lg:top-[-41%] left-0 z-[1] w-full h-full object cover"
       >
         <source src="/videos/blackhole.webm" type="video/webm" />
       </video>
