@@ -23,7 +23,7 @@ const ExperienceSection: FC = () => {
   return (
     <section className="pt-[100px] pb-[50px] lg:pb-[60px]">
       <div className="flex flex-col items-center justify-center gap-5 pb-32">
-        <div className="mb-5 flex w-full items-center justify-start gap-4 lg:w-[776px]">
+        <div className="mb-5 flex w-full items-center justify-center text-center lg:justify-start gap-4 lg:w-[776px]">
           <h1
             className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 md:text-3xl z-20"
             data-aos="fade-left"
@@ -32,12 +32,6 @@ const ExperienceSection: FC = () => {
           >
             My Experience
           </h1>
-          <div
-            className="h-[1px] w-32 bg-primary md:w-96"
-            data-aos="zoom-in-left"
-            data-aos-duration="600"
-            data-aos-once="true"
-          ></div>
         </div>
         <div
           className="flex flex-col items-center gap-5 md:flex-row md:items-start md:gap-8 z-20"

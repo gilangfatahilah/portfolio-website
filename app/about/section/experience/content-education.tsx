@@ -1,18 +1,17 @@
 export const ContentEducation = () => {
   return (
     <div className="text-white z-[20]">
-      <h3 className="text-lg font-medium leading-loose text-secondary md:text-xl">
+      <h3 className="text-lg w-3/4 lg:w-full font-medium lg:leading-loose text-secondary md:text-xl">
         Informatics Management
         <span className="opacity-80 hover:opacity-100">
-          {" "}
-          -{" "}
           <a
             href="https://ubs.ac.id/"
             target="_blank"
             rel="noreferrer"
             className="text-underline"
           >
-            Bani Saleh University
+            {" "}
+            - Bani Saleh University
           </a>
         </span>
       </h3>
