@@ -42,6 +42,10 @@ body {
   }
 }
 
+.text-gradients {
+  @apply text-transparent bg-clip-text bg-gradient-to-tr from-purple-500 to-cyan-500;
+}
+
 .Welcome-text {
   background: linear-gradient(
       0deg,

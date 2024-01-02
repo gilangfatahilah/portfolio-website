@@ -2,6 +2,9 @@
 
 import React, { FC, useState } from "react";
 import { ContentEducation } from "./content-education";
+import { ContentOrganization } from "./content-organization";
+import { ContentCertification } from "./content-certification";
+import { ContentWorkExperience } from "./content-work-experience";
 
 const ExperienceSection: FC = () => {
   const [activeCategory, setActiveCategory] = useState("education");
@@ -10,13 +13,18 @@ const ExperienceSection: FC = () => {
 
   if (activeCategory === "education") {
     selectedContent = <ContentEducation />;
+  } else if (activeCategory === "organizations") {
+    selectedContent = <ContentOrganization />;
+  } else if (activeCategory === "certification") {
+    selectedContent = <ContentCertification />;
+  } else if (activeCategory === "experience") {
+    selectedContent = <ContentWorkExperience />;
   }
 
   const categories = [
     { name: "Education", value: "education" },
     { name: "Organizations", value: "organizations" },
-    { name: "Work Experience", value: "experience" },
-    { name: "Awards", value: "awards" },
+    { name: "Relevant Experience", value: "experience" },
     { name: "Certification", value: "certification" },
   ];
 

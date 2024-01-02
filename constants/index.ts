@@ -33,3 +33,18 @@ export const Socials = [
     href: "https://instagram.com/gilanqf",
   },
 ];
+
+// Icons
+export const bootstrapIcon = "/icons/bootstrap.svg";
+export const tailwindIcon = "/icons/tailwind.svg";
+export const reactIcon = "/icons/react.svg";
+export const nextjsIcon = "/icons/nextjs.svg";
+export const laravelIcon = "/icons/laravel.svg";
+export const nodejsIcon = "/icons/nodejs.svg";
+export const expressIcon = "/icons/express.svg";
+export const mongodbIcon = "/icons/mongodb.svg";
+export const htmlIcon = "/icons/html.svg";
+export const jsIcon = "/icons/js.svg";
+export const webpackIcon = "/icons/webpack.svg";
+export const cssIcon = "/icons/css.svg";
+export const postgresqlIcon = "/icons/postgresql.svg";
