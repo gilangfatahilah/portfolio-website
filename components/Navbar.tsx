@@ -3,10 +3,10 @@
 import { NavItems, Socials } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { FC, useState } from "react";
 import { motion } from "framer-motion";
 
-const Navbar = () => {
+const Navbar: FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full h-auto fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-4">
+    <nav className="w-full h-auto fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-4">
       <div className="w-full h-full flex items-center justify-between m-auto py-4 px-[10px]">
         <a href="/" className="h-auto w-auto flex flex-row items-center">
           <Image
@@ -136,7 +136,7 @@ const Navbar = () => {
           </motion.div>
         </motion.div>
       )}
-    </div>
+    </nav>
   );
 };
 

@@ -22,16 +22,13 @@ export default function RootLayout({
     AOS.init({});
   }, []);
 
-  const isSSExist = sessionStorage.getItem("loading");
+  const isSSExist =
+    typeof sessionStorage !== "undefined" && sessionStorage.getItem("loading");
   const [isLoading, setIsLoading] = useState(true);
 
   const handleLoadingComplete = () => {
     setIsLoading(false);
   };
-
-  // useEffect(() => {
-  //   console.log("running");
-  // }, []);
 
   return (
     <html lang="en" suppressHydrationWarning={true}>
