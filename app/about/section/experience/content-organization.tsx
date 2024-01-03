@@ -7,13 +7,27 @@ export const ContentOrganization = () => {
       date: "Sep 2022 - Dec 2023",
       description: (
         <>
-          <li>
-            Being selected as one of the recipients of the Bank Indonesia
-            Scholarship in 2023 is a source of pride for myself. Additionally,
-            Bank Indonesia runs a program called the "Generasi Baru Indonesia"
-            (Genbi), which aims to cultivate a young generation with leadership
-            qualities, creativity, innovation, and integrity.
-          </li>
+          <p>
+            UKM Banis Photo Club is a non-profit organization based at Bani
+            Saleh University Bekasi, which aims to accommodate students who have
+            an interest and talent in the art of photography.
+          </p>
+          <ul className="flex list-inside list-disc flex-col gap-4 text-sm leading-relaxed lg:text-base">
+            <li>
+              Plan, coordinate and execute various organizational events,
+              including seminars, workshops and social activities. events,
+              including seminars, workshops, and social activities.
+            </li>
+            <li>
+              Build and maintain good relationships with other student
+              organizations other student organizations, external parties, and
+              campus institutions.
+            </li>
+            <li>
+              Create and execute long-term strategies for organizational growth
+              and sustainability.
+            </li>
+          </ul>
         </>
       ),
     },
@@ -24,37 +38,25 @@ export const ContentOrganization = () => {
       date: "Sep 2022 - Sep 2023",
       description: (
         <>
-          <li>
-            In the Student Association of Informatics Engineering at UMS
-            (HIMATIF), I hold a position as the coordinator of the Interest and
-            Talent Division, which oversees various work programs such as
-            Himatif's social media management, Himatif Portable Club (HPC),
-            Profile Video creation, Parade of Informatics Engineering (PARTI),
-            and UNCORE Digital Magazine.
-          </li>
-          <li>
-            One of the biggest events is the{" "}
-            <a
-              href="https://www.instagram.com/parti.ums/"
-              className="text-underline"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Parade of Informatics Engineering
-            </a>
-            (PARTI), where I served as the Head of Publication and
-            Documentation, responsible for organizing all the event's visual
-            documentation and preparations, including photos, videos,{" "}
-            <a
-              href="https://www.instagram.com/p/CiZACw0JXmC/"
-              target="_blank"
-              rel="noreferrer"
-              className="text-underline"
-            >
-              3D mascot
-            </a>
-            , and media streaming.
-          </li>
+          <p>
+            an organization consisting of students who join to achieve common
+            goals and represent the interests of students at the university
+            level, especially in the informatics management major.
+          </p>
+          <ul className="flex list-inside list-disc flex-col gap-4 text-sm leading-relaxed lg:text-base">
+            <li>
+              Plan and manage the production of organizational publications,
+              such as brochures, flyers, and social media content.
+            </li>
+            <li>
+              Responsible for the organization's social media accounts, ensuring
+              the publication of relevant and engaging content.
+            </li>
+            <li>
+              Manage and maintain the organization's documentation archive for
+              reference and sustainability purposes.
+            </li>
+          </ul>
         </>
       ),
     },
