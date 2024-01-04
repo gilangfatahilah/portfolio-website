@@ -1,7 +1,11 @@
 import type { FC } from "react";
-import { AboutHeader, AboutExperience } from "./section";
+import {
+  AboutHeader,
+  AboutExperience,
+  AboutTechStack,
+  AboutToolsUsed,
+} from "./section";
 import { Metadata } from "next";
-import AboutTechStack from "./section/techstack";
 
 export const metadata: Metadata = {
   title: "About | Gilang Fatahilah",
@@ -14,6 +18,7 @@ const About: FC = () => {
       <AboutHeader />
       <AboutExperience />
       <AboutTechStack />
+      <AboutToolsUsed />
     </>
   );
 };

@@ -15,6 +15,8 @@ const githubIcon = "/icons/github.svg";
 const mysqlIcon = "/icons/mysql.svg";
 const vscodeIcon = "/icons/vscode.svg";
 const vite = "/icons/vite.svg";
+const webpack = "/icons/webpack.svg";
+const postman = "/icons/postman.svg";
 const expressIcon = "/icons/express.svg";
 const mongodbIcon = "/icons/mongodb.svg";
 const typescriptIcon = "/icons/typescript.svg";
@@ -52,7 +54,9 @@ const tools = {
   Github: { name: "Github", src: githubIcon, level: "Git hosting" },
   NPM: { name: "NPM", src: npmIcon, level: "Package manager" },
   Vite: { name: "Vite", src: vite, level: "Build tool" },
+  Webpack: { name: "Webpack", src: webpack, level: "Module Bundler" },
   VSCode: { name: "VSCode", src: vscodeIcon, level: "Code editor" },
+  Postman: { name: "Postman", src: postman, level: "API Tester" },
 };
 
 const stacks = {
@@ -62,7 +66,7 @@ const stacks = {
   JS: { name: "Javascript", src: jsIcon, level: "Advanced" },
   Typescript: { name: "Typescript", src: typescriptIcon, level: "Beginer" },
   PHP: { name: "PHP", src: phpicon, level: "Beginer" },
-  NodeJs: { name: "Node Js", src: nodejsIcon, level: "Intermediate" },
+  NodeJs: { name: "NodeJs", src: nodejsIcon, level: "Intermediate" },
   React: { name: "ReactJS", src: reactIcon, level: "Advanced" },
   NextJS: { name: "NextJS", src: nextjsIcon, level: "Intermediate" },
   Express: { name: "ExpressJS", src: expressIcon, level: "Beginner" },
