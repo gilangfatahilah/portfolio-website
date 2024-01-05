@@ -8,6 +8,8 @@ const tailwindIcon = "/icons/tailwind.svg";
 const reactIcon = "/icons/react.svg";
 const nextjsIcon = "/icons/nextjs.svg";
 const nodejsIcon = "/icons/nodejs.svg";
+const sequelizeIcon = "/icons/sequelize.svg";
+const prismaIcon = "/icons/prisma.svg";
 const npmIcon = "/icons/npm.svg";
 const phpicon = "/icons/php.svg";
 const gitIcon = "/icons/git.svg";
@@ -72,6 +74,8 @@ const stacks = {
   Express: { name: "ExpressJS", src: expressIcon, level: "Beginner" },
   Bootstrap: { name: "Bootstrap", src: bootstrapIcon, level: "Intermediate" },
   Tailwind: { name: "TailwindCSS", src: tailwindIcon, level: "Advanced" },
+  Sequelize: { name: "Sequelize", src: sequelizeIcon, level: "Beginer" },
+  Prisma: { name: "Prisma", src: prismaIcon, level: "Beginer" },
   PostgreSql: { name: "PostgreeSQL", src: postgresIcon, level: "Intermediate" },
   MySQL: { name: "MySQL", src: mysqlIcon, level: "Intermediate" },
   MongoDB: { name: "MongoDB", src: mongodbIcon, level: "Beginer" },
