@@ -38,7 +38,13 @@ export const ContentWorkExperience = () => {
             </li>
             <li>
               Developing the capstone project as a Back-End developer with my
-              team and successfully completed the capstone project.
+              team and successfully completed the{" "}
+              <a
+                href="https://github.com/gilangfatahilah/API-TPS"
+                className="text-underline"
+              >
+                capstone project.
+              </a>
             </li>
           </ul>
         </>
@@ -87,9 +93,15 @@ export const ContentWorkExperience = () => {
               to back-end development using Node js and Express js.
             </li>
             <li>
-              developed a final project with my team, where we created an
-              inventory web app with Next js. In this project I worked on the
-              Full-stack Authentication feature.
+              developed a{" "}
+              <a
+                href="https://github.com/pendragonnn/final-project-inventory-web"
+                className="text-underline"
+              >
+                final project
+              </a>{" "}
+              with my team, where we created an inventory web app with Next js.
+              In this project I worked on the Full-stack Authentication feature.
             </li>
           </ul>
         </>
@@ -135,8 +147,15 @@ export const ContentWorkExperience = () => {
           Being a speaker and teacher at the NGOBAR session 2.0 event is a new
           experience for me. the topic I brought up was "CSS Framework with
           Bootstrap", at this event I invited students to directly implement the
-          material with the Project Based Learning method. so it is hoped that
-          students will more easily understand the topic I brought up.
+          material with the{" "}
+          <a
+            href="http://gilangfatahilah.github.io/NGOBAR-HIMASIF/"
+            className="text-underline"
+          >
+            Project
+          </a>{" "}
+          Based Learning method. so it is hoped that students will more easily
+          understand the topic I brought up.
         </p>
       ),
       techs: [

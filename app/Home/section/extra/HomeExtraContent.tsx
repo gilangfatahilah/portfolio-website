@@ -12,13 +12,15 @@ import {
 const HeroExtraContent = () => {
   return (
     <div className="flex flex-col gap-5 max-w-[1200px] w-auto h-auto">
-      <div
+      {/* <div
         data-aos="fade-up"
-        className="Welcome-box py-[11px] px-[13px] mx-auto border border-cyan-500 opacity-[0.9] "
+        className="Welcome-box py-[11px] px-[13px] mx-auto border border-cyan-500 opacity-[0.9]"
       >
-        <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
-        <h1 className="Welcome-text text-base lg:text-xl">Gilang Fatahilah</h1>
-      </div>
+        <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5 hidden lg:block" />
+        <h1 className="Welcome-text text-base lg:text-xl hidden lg:block">
+          Gilang Fatahilah
+        </h1>
+      </div> */}
 
       <div
         data-aos="fade-up"
