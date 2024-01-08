@@ -3,7 +3,8 @@ import Home from "@/app/Home/page";
 import { FC } from "react";
 export const metadata: Metadata = {
   title: "Gilang Fatahilah",
-  description: "Portfolio website of Gilang Fatahilah Akbar",
+  description:
+    "Gilang Fatahilah is a Front-End software engineer specializes in building (and sometimes designing) amazing and new digital experiences.",
 };
 
 const HomePage: FC = () => {
